@@ -21,8 +21,7 @@
             :else
             (do
               (dommy/set-style! (dommy/sel1 :#message) :display "block")
-              (dommy/set-html! (dommy/sel1 :#message)
-                               (template-message message)))))))
+              (dommy/set-html! (dommy/sel1 :#message) (template-message message)))))))
 
 (defn maybe-error [jsonobj]
   (when (get jsonobj "locationP")
@@ -32,5 +31,4 @@
             :else
             (do
               (dommy/set-style! (dommy/sel1 :#errormsg) :display "block")
-              (dommy/set-html! (dommy/sel1 :#errormsg)
-                               (template-error errormsg)))))))
+              (dommy/set-html! (dommy/sel1 :#errormsg) (template-error errormsg)))))))
