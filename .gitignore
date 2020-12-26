@@ -1,0 +1,15 @@
+target
+classes
+resources
+checkouts
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+.lein-*
+.nrepl-port
+.hgignore
+.hg
+profiles.clj
+figwheel_server.log
+.rebel_readline_history
