@@ -1,6 +1,7 @@
 (ns org-ckons-cljs.notifications.core
   (:require-macros [hiccups.core :as hiccups :refer [html]])
-  (:require [dommy.core :as dommy]))
+  (:require [hiccups.runtime :as hiccupsrt]
+            [dommy.core :as dommy]))
 
 (declare template-message)
 (declare template-error)
