@@ -1,5 +1,4 @@
 (ns org-ckons-cljs.notifications.react
-  (:require-macros [hiccups.core :as hiccups :refer [html]])
   (:require [reagent.core :as r]))
 
 (declare reset-message)
