@@ -11,8 +11,6 @@
 (declare reset-errormsg)
 (declare comp-message)
 (declare comp-errormsg)
-(declare set-message)
-(declare set-errormsg)
 
 (def notification-state (r/atom {:message nil :errormsg nil}))
 
@@ -31,9 +29,3 @@
   [:div {:class "alert alert-danger"
          :style {:display (cond (empty? (@notification-state :errormsg)) "none" :else "block")}}
    (@notification-state :errormsg)])
-
-(defn set-message [message]
-  (reset! notification-state (assoc @notification-state :message message)))
-
-(defn set-errormsg [errormsg]
-  (reset! notification-state (assoc @notification-state :errormsg errormsg)))
